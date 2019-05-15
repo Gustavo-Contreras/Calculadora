@@ -12,6 +12,26 @@ Calculadora::~Calculadora()
 }
 */
 double Calculadora::Calculate(double x, char oper, double y)
-{
-	return 0.0;
+{    
+	
+	double resultado;
+	switch (oper)
+	{
+	case '+': 
+		resultado = x + y;
+		break;
+	case '*':
+		resultado = x * y;
+		break;
+	case '/':
+		resultado = x / y;
+		break;
+	case'-':
+		resultado = x - y;
+		break;
+
+	default:
+		break;
+	}
+	return resultado;
 }
