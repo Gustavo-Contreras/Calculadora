@@ -29,8 +29,9 @@ double Calculadora::Calculate(double x, char oper, double y)
 	case'-':
 		resultado = x - y;
 		break;
-
+			
 	default:
+		resultado = 0;
 		break;
 	}
 	return resultado;
